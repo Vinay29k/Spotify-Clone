@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Ubuntu&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: antiquewhite;
+}
+.navbar{
+    background-color: black;
+    height: 50px;
+}
+.navbar ul{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    color: white;
+    list-style: none;
+   
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.logo img{
+    width: 44px;
+    padding: 2px 5px;
+   
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+   
+}
+.navbar ul li{
+    padding: 0 10px;
+}
+
+.container{
+    height: 67vh;
+    background-color: black;
+    color: white;
+    font-family: 'Chakra Petch', sans-serif;
+    width: 70%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-image: url('bg.jpg'); 
+    background-position: center;
+    background-size: cover;
+    
+    
+  
+}
+.Bottom{
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    height: 90px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icon{
+    margin-top: 20px;
+    cursor: pointer;
+   
+}
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songItem{
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    height: 45px;
+    color:black ;
+    margin: 12px 0;
+    justify-content: space-between;
+    border-radius: 20px;
+    width: 50%;
+
+}
+.songItem img{
+    width: 41px;
+    border-radius: 30px;
+    margin: 0 10px;
+}
+
+.timeStamp{
+    padding: 15px;
+}
+
+.timeStamp i{
+    cursor: pointer;
+}
+.PlayList h1{
+    margin-left: 20px;
+}
+
+.Playlist-Container{
+    margin: 30px 0;
+}
+.playingInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Chakra Petch', sans-serif;
+
+}
+.playingInfo img{
+
+    opacity: 0;
+    transition: 0.4s;
+    
+}
+
+@media only screen and (max-width:800px){
+    .container{
+        height: 71vh;
+    }
+
+}
+@media only screen and (max-width:648px){
+    .container{
+        height: auto;
+        width: auto;
+    }
+    .songItem{
+        height: auto;
+        width: auto;
+    }
+    .playingInfo{
+        left: 4vw;
+    }
+    
+
+    #myProgressBar{
+        display: none;
+        
+    }
+    .icon{
+        margin-left: 50vw;
+       
+    }
+    
+
+}
+@media only screen and (max-width:375px){
+    .playingInfo{
+        left: -5vw;
+        margin-top: 0;
+    }
+    .Bottom{
+        position: absolute;
+        width: -webkit-fill-available;
+    }
+    
+}
